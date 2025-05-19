@@ -1,92 +1,104 @@
-📧 Email Fraud Detection (Spam vs Ham)
-This project focuses on exploring and analyzing an email dataset to identify and distinguish spam emails from non-spam (ham) ones. The notebook (analysis.ipynb) walks through the steps of data loading, cleaning, basic exploration, and initial visual insights.
+# 📧 Email Fraud Detection (Spam vs Ham)
 
-📂 Project Overview
+This project focuses on exploring and analyzing an email dataset to identify and distinguish spam emails from non-spam (ham) ones. The notebook (`analysis.ipynb`) walks through the steps of data loading, cleaning, basic exploration, and initial visual insights.
+
+---
+
+## 📂 Project Overview
+
 The notebook covers:
 
-Installation and import of necessary Python libraries
+- Installation and import of necessary Python libraries
+- Loading and inspecting a dataset of labeled emails
+- Data cleaning and validation
+- Exploratory data analysis (EDA), including visualizations
 
-Loading and inspecting a dataset of labeled emails
+---
 
-Data cleaning and validation
+## 🛠 Technologies Used
 
-Exploratory data analysis (EDA), including visualizations
+- **Python**
+- **Jupyter Notebook**
+- **pandas**, **numpy**
+- **matplotlib**
+- **NLTK**
+- **wordcloud**
 
-🛠 Technologies Used
-Python
+---
 
-Jupyter Notebook
+## 🔧 Steps Performed
 
-pandas, numpy
+### 1. 📦 Installation & Setup
 
-matplotlib
-
-NLTK
-
-wordcloud
-
-🔧 Steps Performed
-1. 📦 Installation & Setup
 All necessary libraries are installed at the beginning using pip (executed in the notebook).
 
-2. 🧪 Data Loading
-Dataset: spam_ham_dataset.csv
+### 2. 🧪 Data Loading
 
-Loaded using pandas.read_csv() with latin1 encoding
+- Dataset: `spam_ham_dataset.csv`
+- Loaded using `pandas.read_csv()` with `latin1` encoding
 
-3. 🧹 Data Cleaning
-Checked data structure using df.info()
+### 3. 🧹 Data Cleaning
 
-Identified missing values using df.isnull().sum()
+- Checked data structure using `df.info()`
+- Identified missing values using `df.isnull().sum()`
+- Detected and removed duplicate records using `df.drop_duplicates()`
+- Reviewed dataset size with `df.shape`
 
-Detected and removed duplicate records using df.drop_duplicates()
+### 4. 📊 Exploratory Data Analysis (EDA)
 
-Reviewed dataset size with df.shape
+- **Class Distribution**:
+  - Count and percentage of ham vs. spam emails
+  - Displayed with a pie chart using `matplotlib`
 
-4. 📊 Exploratory Data Analysis (EDA)
-Class Distribution:
+- **Text Structure Analysis**:
+  - Calculated number of characters and words per email using `.apply(len)` and `.apply(str.split).len()`
 
-Count and percentage of ham vs. spam emails
+- **Visualization**:
+  - Pie chart styled with custom colors, shadow, and labels to visualize spam vs ham distribution
 
-Displayed with a pie chart using matplotlib
+---
 
-Text Structure Analysis:
+## 📈 Visual Highlights
 
-Calculated number of characters and words per email using .apply(len) and .apply(str.split).len()
+- 📉 **Pie Chart** showing class distribution (ham/spam)
+- 📄 **DataFrame Preview** for initial dataset inspection
+- 📏 **Text Metrics** including character and word counts
 
-Visualization:
+---
 
-Pie chart styled with custom colors, shadow, and labels to visualize spam vs ham distribution
+## 📁 File Structure
 
-📈 Visual Highlights
-📉 Pie Chart showing class distribution (ham/spam)
-
-📄 DataFrame Preview for initial dataset inspection
-
-📏 Text Metrics including character and word counts
-
-📁 File Structure
-bash
-Copy
-Edit
+```
 analysis.ipynb        # Jupyter Notebook with complete workflow
-✅ Requirements
+```
+
+---
+
+## ✅ Requirements
+
 Install the required Python libraries with:
 
-bash
-Copy
-Edit
+```bash
 pip install numpy pandas matplotlib wordcloud nltk
+```
+
 Also, run the following in Python to download NLTK datasets:
 
-python
-Copy
-Edit
+```python
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
-📌 Notes
-This notebook provides a foundational analysis and prepares the data for future stages like feature extraction and machine learning.
+```
 
-No machine learning model or advanced text processing (e.g., tokenization, TF-IDF) has been applied yet.
+---
 
+## 📌 Notes
+
+- This notebook provides a foundational analysis and prepares the data for future stages like feature extraction and machine learning.
+- No machine learning model or advanced text processing (e.g., tokenization, TF-IDF) has been applied yet.
+
+---
+
+## 📬 Contact
+
+For suggestions or collaboration, feel free to reach out.
