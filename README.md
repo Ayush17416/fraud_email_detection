@@ -96,9 +96,3 @@ nltk.download('punkt')
 
 - This notebook provides a foundational analysis and prepares the data for future stages like feature extraction and machine learning.
 - No machine learning model or advanced text processing (e.g., tokenization, TF-IDF) has been applied yet.
-
----
-
-## 📬 Contact
-
-For suggestions or collaboration, feel free to reach out.
